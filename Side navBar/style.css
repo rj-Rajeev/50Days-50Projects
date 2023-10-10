@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* cursor: none; */
+    
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.mouseFollower{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #2c2424;
+    mix-blend-mode:difference;
+    z-index: 999999;
+    border-radius: 50%;
+    transition:cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+.sec{
+    /* height: 100vh; */
+    width: 100vw;
+    background-image:linear-gradient(to bottom right, #EA5455, #7367F0, #32CCBC);
+    scroll-behavior: smooth;
+}
+
+.section1 .sidenav{
+    position: relative;
+    width: 70px;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    background-image:linear-gradient(to top right, #e68d4d, #67d0f0, #9b5bc6);
+}
+
+a{
+    scale: 1.5;
+}
+
+h1,p{
+    padding-left: 20%;
+    padding-top: 40%;
+    text-align: left;
+    width:fit-content ;
+}
+h1{
+    padding-top: 15%;
+    font-size: 7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1:hover{
+    color: #dadada;
+}
+p{
+    padding: 1% 20%;
+    font-size: 4vw;
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    box-shadow: 1px 10px 10px rgb(0, 0, 0); /* Add circular shadow with dark color */
+    border-radius: 100%; /* Make the box shadow circular */
+}
+
+.active{
+    color: #7367F0;
+}

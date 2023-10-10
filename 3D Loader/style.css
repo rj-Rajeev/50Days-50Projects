@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+}
+.main span{
+    color:white;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+#circle1{
+    border-bottom: 5px solid rgb(253, 124, 44);
+    border-top: 5px solid rgb(65, 183, 30);
+    animation: animate1 2s linear infinite;
+}
+#circle2{
+    border-right: 5px solid rgb(44, 253, 190);
+    border-left: 5px solid rgb(138, 44, 253);
+    animation: animate2 2s linear infinite;
+}
+#circle3{
+    border-bottom: 5px solid rgb(253, 44, 236);
+    border-right: 5px solid rgb(253, 44, 180);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+@keyframes animate2 {
+    0%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+@keyframes animate3 {
+    0%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}

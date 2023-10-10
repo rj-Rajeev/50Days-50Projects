@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #dadada;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.outerCircle{
+    width: 200vh;
+    height: 200vh;
+    /* background-color: red; */
+    border-radius: 50%;
+    position: absolute;
+    top: -150vh;
+    overflow: hidden;
+    transition: 1s ease-out;
+}
+
+
+.outerCircle li{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+    transform: rotate(180deg);
+    text-align: center;
+    font-size: 50px;
+    list-style-type: none;
+    /* background-color: red; */
+}
+
+li span{
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+li:nth-child(1){
+    transform: rotate(215deg);
+}
+li:nth-child(1) span{
+    transform: rotate(185deg);
+}
+li:nth-child(2){
+    transform: rotate(195deg);
+}
+li:nth-child(2) span{
+    transform: rotate(185deg);
+}
+li:nth-child(3){
+    transform: rotate(175deg);
+}
+li:nth-child(3) span{
+    transform: rotate(185deg);
+}
+li:nth-child(4){
+    transform: rotate(155deg);
+}
+li:nth-child(4) span{
+    transform: rotate(185deg);
+}
+li:nth-child(5){
+    transform: rotate(132deg);
+}
+li:nth-child(5) span{
+    transform: rotate(185deg);
+}
+
+.innerCircle{
+    width: 80%;
+    height: 80%;
+    border: 4px solid rgb(143, 132, 132);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.target{
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.target .cir{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.active{
+    transform: scale(1.2);
+    background-color: red;
+}
+
+.inactive{
+    transform: scale(1);
+    background-color: #fff;
+}

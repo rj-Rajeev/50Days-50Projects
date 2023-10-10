@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .navbar {
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+  }
+  
+  .dot {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    cursor: pointer;
+    margin: 0 0px;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.5);
+
+  }
+  
+  .dot:hover {
+    background-color: #7e6e6c;
+  }
+  
+  .dot:active {
+    transform: scale(5);
+  }
+  
+  .center-dot {
+    background-color: black;
+  }
+  
+  .top-dot {
+    position: absolute;
+    top: -10px;
+    left: 0;
+  }
+  
+  .right-dot {
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+  
+  .bottom-dot {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+  
+  .left-dot {
+    position: absolute;
+    top: 0;
+    left: -10px;
+  }
+  
