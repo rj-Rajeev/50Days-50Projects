@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://static.pexels.com/photos/7976/pexels-photo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    width: 100vw;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo{
+    font-size: 25px;
+    font-family: Aharoni;
+    font-weight: 900;
+    color: white;
+    user-select: none;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+#btn{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition: all ease .1s;
+}
+#btn:active{
+    background-color: #dadada;
+}
+
+.container{
+    width: 300px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0 40px;
+    padding-right: 5px;
+}
+
+.container h1{
+    margin-left: 65px;
+    margin-top: 10px;
+    font-family: Futura;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#emailInput,#passwordInput{
+    width: 80%;
+    background: transparent;
+    height: 25px;
+    margin: 10px 0;
+    border: 0;
+    border-bottom: 2px solid white;
+    padding: 20px 0px;
+    cursor: text;
+}
+
+input:focus {
+    outline: none;
+}
+
+.permissions{
+    font-size: 14px;
+    padding: 10px;
+}
+
+button{
+    width: 80%;
+    padding: 10px;
+    margin-left: 8px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease .1s;
+}
+button:active{
+    background-color: #dadada;
+}
+
+.container h5{
+
+    margin: 5px;
+}
+
+.container h5 span{
+    color: blue;
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+  
